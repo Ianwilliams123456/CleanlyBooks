@@ -1,0 +1,10 @@
+html {
+}
+
+.navigationBar {
+    background-image: radial-gradient(rgb(90, 92, 93), white);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    justify-content: left;
+}
