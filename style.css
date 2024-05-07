@@ -6,6 +6,9 @@ body {
     }
 
 .navigationBar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     background-image: radial-gradient(#0dafcc, #b4d7eb);
     background-size: cover;
     background-repeat: no-repeat;
@@ -20,21 +23,33 @@ body {
     border-color: #287aa9;
 }
 
-.homeBlocks {
-    /* background-image: url('/docs/images/20170910_133844.jpg');
-    background-attachment: scroll;
-    opacity: .8;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;*/
+#homeFirst {
     font-family: "Times New Roman", Times, serif;
     background-color: #7e96a3;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+    padding: 20px;
     text-align: center;
-    justify-content: left;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
     border-width: 5px;
     border-style: solid;
     border-color: #287aa9;
+}
+
+#serviceFive {
+    grid-column: 1 / span 2;
+}
+
+.homeBlocks {
+    font-size: xx-large;
+}
+
+.services {
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
 }
