@@ -16,6 +16,8 @@ body {
     justify-items: flex-start;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    max-width: 100%;
     padding-left: 20%;
     padding-right: 20%;
     border-width: 5px;
@@ -26,12 +28,12 @@ body {
 #homeFirst {
     font-family: "Times New Roman", Times, serif;
     background-color: #7e96a3;
+    text-align: center;
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
     grid-gap: 20px;
     padding: 20px;
-    text-align: center;
     justify-content: center;
     width: 100%;
     max-width: 100%;
@@ -40,8 +42,32 @@ body {
     border-color: #287aa9;
 }
 
+#serviceOne {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#serviceTwo {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#serviceThree {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#serviceFour {
+    grid-column: 2;
+    grid-row: 2;
+}
+
 #serviceFive {
-    grid-column: 1 / span 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 3;
+    padding-left: 33%;
+    padding-right: 33%;
 }
 
 .homeBlocks {
