@@ -1,27 +1,40 @@
 html {
-
+background-color: #b4d7eb;
 }
+body {
+    background-color: #b4d7eb;
+    }
 
 .navigationBar {
-    background-image: radial-gradient(#a0b842, #70822e);
+    background-image: radial-gradient(#0dafcc, #b4d7eb);
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: .6;
-    z-index: -1;
+    display:flex;
+    justify-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #287aa9;
+}
+
+.homeBlocks {
+    /* background-image: url('/docs/images/20170910_133844.jpg');
+    background-attachment: scroll;
+    opacity: .8;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;*/
+    font-family: "Times New Roman", Times, serif;
+    background-color: #7e96a3;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     justify-content: left;
     border-width: 5px;
     border-style: solid;
     border-color: #287aa9;
 }
-
-#aboutFirst {
-    background-image: url('/docs/images/20170910_133844.jpg');
-    background-attachment: scroll;
-    opacity: .8;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-}
-
