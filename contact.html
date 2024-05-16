@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Contact Us</title>
 </head>
 <body>
-    
+<div class = navigationBar id = "nav1">
+    <img src = "docs\images\Small logo.png">
+    <a href="mailto:chava@cleanlybooks.com">
+        <div id = "email">Click here to email us</div>
+    </a>
+    <a href="about.html">
+        <div class="links" id="about">About</div>
+    </a>
+    <a href="contact.html">
+        <div class="links" id="contact">Contact</div>
+    </a>
+    <a href="index.html">
+        <div class="links" id="contact">Home</div>
+    </a>
+</div> 
+<h1>Contact Us</h1>
+<div class = "contactUs">
+<form action="send_email.php" method="POST">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" required></textarea><br>
+    <input type="submit" value="Send">
+</form>
+</div>
 </body>
-</html>
+</html>   
