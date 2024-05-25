@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
         <title>Cleanly Books</title>
 </head>
 <body>
@@ -22,6 +23,7 @@
         <div class="links" id="contact">Home</div>
     </a>
 </div>   
+
 <div class = "HomeBlocks" id = "firstHead"><h1>Services Provided</h1></div>
 <div class = "homeBlocks" id = "homeFirst">
     <div class = "services" id = "serviceOne">General Bookkeeping</div>
@@ -69,27 +71,6 @@
     </div>
 </div>
 
-<script>
-    function toggleDropdown(dropdownId) {
-        var dropdownContent = document.getElementById(dropdownId);
-        if (dropdownContent.style.display === "block") {
-            dropdownContent.style.display = "none";
-        } else {
-            dropdownContent.style.display = "block";
-        }
-    }
-
-    // Ensuring all dropdowns are closed on page load
-    window.onload = function() {
-        var dropdowns = document.getElementsByClassName('dropdown-content');
-        for (var i = 0; i < dropdowns.length; i++) {
-            dropdowns[i].style.display = 'none';
-        }
-    }
-</script>
-
-
-
 <div class = "homeBlocks" id = "homeThird">
     <p>I need client quotes here</p>
     <p>asdfasdfasdf</p>
@@ -99,36 +80,5 @@
     <p>asdfasdfasdf</p>
     <p>asdfasdfasdf</p>
 </div>
-<script>
-    function toggleDropdown(dropdownId) {
-        var dropdownContent = document.getElementById(dropdownId);
-        if (dropdownContent.style.display === "block") {
-            dropdownContent.style.display = "none";
-        } else {
-            dropdownContent.style.display = "block";
-        }
-    }
-
-    // Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropdown-btn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    for (var i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-    
-    // Ensuring all dropdowns are closed on page load
-    window.onload = function() {
-        var dropdowns = document.getElementsByClassName('dropdown-content');
-        for (var i = 0; i < dropdowns.length; i++) {
-            dropdowns[i].style.display = 'none';
-        }
-    }
-</script>
 </body>
 </html>

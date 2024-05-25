@@ -53,6 +53,10 @@ body {
     height: 5em;
 }
 
+.services {
+    width: 100%;
+}
+
 #firstWords {
     margin:auto;
     max-width:50%;
