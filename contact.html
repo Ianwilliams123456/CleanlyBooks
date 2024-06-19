@@ -7,21 +7,26 @@
     <title>Contact Us</title>
 </head>
 <body>
-<div class = navigationBar id = "nav1">
-    <img src = "docs\images\Small logo.png">
-    <a href="mailto:chava@cleanlybooks.com">
-        <div id = "email">Click here to email us</div>
-    </a>
-    <a href="about.html">
-        <div class="links" id="about">About</div>
-    </a>
-    <a href="contact.html">
-        <div class="links" id="contact">Contact</div>
-    </a>
-    <a href="index.html">
-        <div class="links" id="contact">Home</div>
-    </a>
-</div> 
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="docs/images/Small logo.png" alt="Cleanly Books Logo">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="mailto:chava@cleanlybooks.com">Email Us</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
 <h1>Contact Us</h1>
 <div class = "contactUs">
 <form action="send_email.php" method="POST">
