@@ -2,88 +2,131 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
-        <title>Cleanly Books</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleanly Books</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #143D55;
+            margin: 0;
+            padding: 0;
+            background-color: #E6F7FF; /* Light blue background color */
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header, footer {
+            background-color: #DDEFFF; /* Much lighter blue for increased contrast */
+            color: #FFFFFF;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .banner {
+            width: auto;
+            height: 200px; /* Increased height to match the top image */
+        }
+        .footer-logo {
+            width: auto;
+            height: 80px;
+        }
+        .content {
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            text-align: center;
+        }
+        .email-button {
+            display: inline-block; /* Change from block to inline-block */
+            background-color: #3087B4;
+            color: #FFFFFF;
+            padding: 15px;
+            font-size: 20px;
+            text-decoration: none;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .services, .about {
+            margin-top: 20px;
+        }
+        .services ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .services li {
+            background-color: #A0B842;
+            color: #FFFFFF;
+            padding: 12px;
+            margin: 5px 0;
+            border-radius: 5px;
+            font-size: 18px;
+            text-align: center;
+        }
+        .about {
+            background-color: #999999;
+            color: #FFFFFF;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+        .top-image, .bottom-image {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            .banner, .footer-logo {
+                width: 70%;
+                height: auto; /* Maintain aspect ratio on smaller screens */
+            }
+            .email-button {
+                padding: 10px;
+                font-size: 16px;
+            }
+            .content, .about {
+                padding: 15px;
+                font-size: 16px;
+            }
+            .services li {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="navbar">
-            <div class="logo">
-                <img src="docs/images/Small logo.png" alt="Cleanly Books Logo">
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="mailto:chava@cleanlybooks.com">Email Us</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="index.html">Home</a></li>
-                </ul>
-                <div class="hamburger">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
-            </nav>
-        </div>
+        <img src="docs\images\Small logo.png" alt="Cleanly Books Banner" class="banner">
     </header>
-
-<div class = "HomeBlocks" id = "firstHead"><h1>Services Provided</h1></div>
-<div class = "homeBlocks" id = "homeFirst">
-    <div class = "services" id = "serviceOne">General Bookkeeping</div>
-    <div class = "services" id = "serviceTwo">Accounts Receivable/Payable</div>
-    <div class = "services" id = "serviceThree">Financial Reporting</div>
-    <div class = "services" id = "serviceFour">Payroll Services</div>
-    <div class = "services" id = "serviceFive">Tax Preparation</div>
-</div>  
-<div class = "HomeBlocks" id = "firstHead"><h1>Put Questions in here</h1></div> 
-<div class="homeBlocks" id="homeSecond" style="width: 100%; text-align: center;">
-    <!-- First Question -->
-    <div class="dropdown">
-    <button class="dropdown-btn" onclick="toggleDropdown('dropdownContent1')">Why should I not just keep my own books?</button>
-    <div class="dropdown-content" id="dropdownContent1">
-        <p>Managing your own books can be feasible if you have a small and simple operation. However, professional bookkeepers not only help ensure accuracy in financial records, but also provide insights into financial trends, help optimize cash flow, and reduce the burden during tax season by ensuring all records are compliant with current tax laws. This level of expertise and detail can save valuable time and prevent costly mistakes.</p>
+    <div class="container">
+        <img src="docs/images/pexels-olly-3823488.jpg" alt="Pexels Image" class="top-image">
+        <div class="content">
+            <h1>Welcome to Cleanly Books</h1>
+            <p><strong>Professional Bookkeeping Services for Your Peace of Mind</strong></p>
+            <a href="mailto:chava@cleanlybooks.com" class="email-button">Email me: chava@cleanlybooks.com</a>
+            <div class="about">
+                <h2>About Cleanly Books</h2>
+                <p>With over 25 years of experience, Cleanly Books provides expert bookkeeping and financial services tailored to meet your unique needs. Our services ensure accurate financial records, timely tax preparation, and insightful financial reporting. Trust us to handle your books while you focus on growing your business.</p>
+            </div>
+            <div class="services">
+                <h2>Services Provided</h2>
+                <ul>
+                    <li>General Bookkeeping</li>
+                    <li>Accounts Receivable</li>
+                    <li>Financial Reporting</li>
+                    <li>Payroll Services</li>
+                    <li>Tax Preparation</li>
+                </ul>
+            </div>
+        </div>
+        <img src="docs/images/20170910_133844.jpg" alt="2017 Image" class="bottom-image">
     </div>
-    </div>
-    <!-- Second Question -->
-    <div class="dropdown">
-    <button class="dropdown-btn" onclick="toggleDropdown('dropdownContent2')">What if I use a CPA for taxes?</button>
-    <div class="dropdown-content" id="dropdownContent2">
-        <p>While a CPA is invaluable for tax advice and strategic financial planning, they typically focus on broader financial issues rather than the day-to-day transaction management that bookkeeping covers. Regular bookkeeping ensures that your financial records are up-to-date and accurate, providing your CPA with reliable data to work with during tax season, which can lead to better-informed decisions and potentially greater tax savings.</p>
-    </div>
-    </div>
-    <!-- Third Question -->
-    <div class="dropdown">
-    <button class="dropdown-btn" onclick="toggleDropdown('dropdownContent3')">I don't make much money, why should I worry about bookkeeping?</button>
-    <div class="dropdown-content" id="dropdownContent3">
-        <p>Effective bookkeeping is crucial regardless of business size. It provides a clear picture of your financial status, helps in tracking expenses, and can highlight areas where you can save money. Moreover, well-maintained books can be critical for securing loans, attracting investors, or expanding your business in the future.</p>
-    </div>
-    </div>
-    <!-- Fourth Question -->
-    <div class="dropdown">
-    <button class="dropdown-btn" onclick="toggleDropdown('dropdownContent4')">Why don't I just wait until I am audited and then show my books?</button>
-    <div class="dropdown-content" id="dropdownContent4">
-        <p>Waiting until an audit to organize your financial records can lead to significant stress and potential financial penalties if discrepancies are found. Regular bookkeeping ensures that your financial records are always audit-ready, minimizing the risk of errors and the effort involved in an audit. Being proactive with bookkeeping demonstrates compliance and financial responsibility.</p>
-    </div>
-    </div>
-    <!-- Fifth Question -->
-    <div class="dropdown">
-    <button class="dropdown-btn" onclick="toggleDropdown('dropdownContent5')">Why would I want a separate payroll preparer in addition to my payroll processor?</button>
-    <div class="dropdown-content" id="dropdownContent5">
-        <p>While payroll processors handle the calculations and processing of payroll checks, a payroll preparer offers additional oversight and ensures compliance with tax laws and filing requirements. This dual approach helps prevent costly errors in tax filings and can manage more complex scenarios like benefits administration and new hire reporting, which might not be fully supported by a processor alone.</p>
-    </div>
-    </div>
-</div>
-
-<div class = "homeBlocks" id = "homeThird">
-    <p>I need client quotes here</p>
-    <p>asdfasdfasdf</p>
-    <p>asdfasdfasdf</p>
-    <p>asdfasdfasdf</p>
-    <p>asdfasdfasdf</p>
-    <p>asdfasdfasdf</p>
-    <p>asdfasdfasdf</p>
-</div>
 </body>
 </html>
