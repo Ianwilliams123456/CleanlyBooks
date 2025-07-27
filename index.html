@@ -4,102 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cleanly Books</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            color: #143D55;
-            margin: 0;
-            padding: 0;
-            background-color: #E6F7FF; /* Light blue background color */
-        }
-        .container {
-            width: 90%;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        header, footer {
-            background-color: #DDEFFF; /* Much lighter blue for increased contrast */
-            color: #FFFFFF;
-            text-align: center;
-            padding: 10px 0;
-        }
-        .banner {
-            width: auto;
-            height: 200px; /* Increased height to match the top image */
-        }
-        .footer-logo {
-            width: auto;
-            height: 80px;
-        }
-        .content {
-            background-color: #FFFFFF;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-            text-align: center;
-        }
-        .email-button {
-            display: inline-block; /* Change from block to inline-block */
-            background-color: #3087B4;
-            color: #FFFFFF;
-            padding: 15px;
-            font-size: 20px;
-            text-decoration: none;
-            margin: 20px 0;
-            border-radius: 5px;
-        }
-        .services, .about {
-            margin-top: 20px;
-        }
-        .services ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .services li {
-            background-color: #A0B842;
-            color: #FFFFFF;
-            padding: 12px;
-            margin: 5px 0;
-            border-radius: 5px;
-            font-size: 18px;
-            text-align: center;
-        }
-        .about {
-            background-color: #999999;
-            color: #FFFFFF;
-            padding: 20px;
-            border-radius: 10px;
-            font-size: 18px;
-        }
-        .top-image, .bottom-image {
-            width: 100%;
-            height: auto;
-            margin-top: 20px;
-            border-radius: 10px;
-        }
-        h2 {
-            text-align: center;
-        }
-        @media (max-width: 600px) {
-            .banner, .footer-logo {
-                width: 70%;
-                height: auto; /* Maintain aspect ratio on smaller screens */
-            }
-            .email-button {
-                padding: 10px;
-                font-size: 16px;
-            }
-            .content, .about {
-                padding: 15px;
-                font-size: 16px;
-            }
-            .services li {
-                font-size: 16px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
@@ -128,5 +33,9 @@
         </div>
         <img src="docs/images/20170910_133844.jpg" alt="2017 Image" class="bottom-image">
     </div>
+    <footer>
+        <p>&copy; <span id="current-year"></span> Cleanly Books. All rights reserved.</p>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
